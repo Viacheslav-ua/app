@@ -26,4 +26,16 @@ fn main() {
     None => println!("Vector is empty"),
   }
 
+  println!("Last el is {}", &list1[list1.len() - 1]);
+  match  list2.last() {
+    Some(el) => println!("Last el is {}", el),
+    None => println!("Vector is empty"),
+  }
+
+  if list2.is_empty() {
+    println!("Vector is empty")
+  } else {
+    println!("Vector is not empty")
+  }
+
 }
