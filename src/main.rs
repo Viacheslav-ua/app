@@ -17,4 +17,13 @@ fn main() {
       
   }
   println!("List1 element {1} is: {0:?}", list1.get(index).unwrap(), index);
+
+  println!("{}", list1.first().unwrap());
+
+  let list2: Vec<i32> = vec![];
+  match list2.first() {
+    Some(el) => println!("First el is {}", el),
+    None => println!("Vector is empty"),
+  }
+
 }
